@@ -119,6 +119,7 @@ html, body {
   font-size: clamp(13px, 3.2vw, 15px);
   font-style: italic;
   opacity: 0.9;
+  margin-bottom: 10px;
 }
 
 /* DATE */
@@ -134,12 +135,14 @@ html, body {
   height: 1px;
   width: 90%;
   background: rgba(255,255,255,0.4);
+  margin: 6px 0;
 }
 
 /* COUNTDOWN */
 #countdown {
   font-size: 16px;
   color: #38E874;
+  margin: 6px 0;
 }
 
 /* LOCATION */
