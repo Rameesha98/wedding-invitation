@@ -15,16 +15,16 @@ html, body {
   z-index: -2;
 }
 
-/* LIGHTER OVERLAY */
+/* LIGHT OVERLAY */
 .overlay {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.35); /* lighter */
+  background: rgba(0,0,0,0.35);
   z-index: -1;
 }
 
-/* HERO SECTION */
+/* HERO */
 #hero {
   height: 100vh;
   display: flex;
@@ -41,28 +41,32 @@ html, body {
   align-items: center;
 }
 
-/* CARD (LIGHT GLASS EFFECT) */
+/* CARD (PERFECT CENTER) */
 .card {
-  height: 92vh;
+  height: 90vh;
   width: 92%;
   max-width: 420px;
   margin: auto;
-  padding: 18px;
+
+  padding: 20px 16px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 
   background: rgba(255,255,255,0.15);
   backdrop-filter: blur(20px);
-  border-radius: 20px;
+  border-radius: 22px;
   border: 1px solid rgba(255,255,255,0.25);
 
   text-align: center;
   box-sizing: border-box;
+
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
 }
 
-/* NAMES */
+/* TEXT */
 .names {
   font-family: 'Playfair Display';
   font-size: 6.5vw;
@@ -80,16 +84,16 @@ html, body {
   margin: 5px 0;
 }
 
-/* TEXT */
 .text {
   font-size: 3.5vw;
   line-height: 1.4;
-  color: rgba(255,255,255,0.85);
+  width: 100%;
 }
 
 .together, .request {
   font-style: italic;
   opacity: 0.9;
+  width: 100%;
 }
 
 /* DATE */
@@ -110,11 +114,13 @@ html, body {
 #countdown {
   font-size: 3.6vw;
   color: #c8f2da;
+  width: 100%;
 }
 
 /* LOCATION */
 .location {
   font-size: 3.6vw;
+  width: 100%;
 }
 
 .location p:first-child {
@@ -122,17 +128,18 @@ html, body {
   color: #bff0d6;
 }
 
-/* BUTTON SECTION */
+/* BUTTON AREA */
 .bottom {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* BUTTON STYLE */
+/* BUTTON */
 .btn {
   width: 85%;
-  max-width: 260px;
+  max-width: 240px;
   padding: 12px;
 
   border-radius: 30px;
@@ -141,12 +148,10 @@ html, body {
 
   margin: 6px auto;
   color: white;
-  font-size: 14px;
 
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
-/* BUTTON HOVER */
 .btn:hover {
   background: rgba(255,255,255,0.3);
   transform: scale(1.05);
@@ -160,7 +165,25 @@ html, body {
   background: rgba(255,255,255,0.2);
   padding: 12px;
   border-radius: 50%;
-  cursor: pointer;
+}
+
+/* ENTER ANIMATION */
+.fade-out {
+  animation: fadeOut 0.8s forwards;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeOut {
+  0% {opacity:1; transform:scale(1);}
+  100% {opacity:0; transform:scale(1.1);}
+}
+
+@keyframes fadeIn {
+  0% {opacity:0; transform:translateY(30px);}
+  100% {opacity:1; transform:translateY(0);}
 }
 
 /* SMALL SCREEN FIX */
