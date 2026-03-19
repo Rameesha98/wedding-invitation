@@ -41,7 +41,7 @@ html, body {
   align-items: center;
 }
 
-/* CARD (PERFECT CENTER) */
+/* CARD */
 .card {
   height: 90vh;
   width: 92%;
@@ -62,11 +62,12 @@ html, body {
 
   text-align: center;
   box-sizing: border-box;
+  overflow: hidden;
 
   box-shadow: 0 10px 40px rgba(0,0,0,0.3);
 }
 
-/* TEXT */
+/* NAMES */
 .names {
   font-family: 'Playfair Display';
   font-size: 6.5vw;
@@ -84,6 +85,7 @@ html, body {
   margin: 5px 0;
 }
 
+/* TEXT */
 .text {
   font-size: 3.5vw;
   line-height: 1.4;
@@ -128,30 +130,37 @@ html, body {
   color: #bff0d6;
 }
 
-/* BUTTON AREA */
+/* BUTTON CONTAINER */
 .bottom {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-/* BUTTON */
+/* BUTTON FIXED PERFECT */
 .btn {
-  width: 85%;
-  max-width: 240px;
-  padding: 12px;
+  width: 80%;
+  max-width: 220px;
+  padding: 10px 16px;
 
   border-radius: 30px;
   background: rgba(255,255,255,0.18);
   border: 1px solid rgba(255,255,255,0.4);
 
-  margin: 6px auto;
+  margin: 8px auto;
+
+  display: block;
+  text-align: center;
+
+  box-sizing: border-box;
   color: white;
 
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
+/* BUTTON HOVER */
 .btn:hover {
   background: rgba(255,255,255,0.3);
   transform: scale(1.05);
@@ -165,6 +174,7 @@ html, body {
   background: rgba(255,255,255,0.2);
   padding: 12px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 /* ENTER ANIMATION */
