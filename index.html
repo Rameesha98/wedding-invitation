@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wedding Invitation</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Cormorant+Garamond&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- BACKGROUND VIDEO -->
+<video autoplay muted loop playsinline id="bgVideo">
+  <source src="video.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<!-- MUSIC -->
+<audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- MUSIC BUTTON -->
+<div class="music-btn" onclick="toggleMusic()">🎵</div>
+
+<!-- HERO -->
+<section id="hero">
+  <h1 class="cinema">Rameesha</h1>
+  <div class="and">and</div>
+  <h1 class="cinema">Apeksha</h1>
+  <button onclick="enterSite()" class="btn enter-btn">Enter</button>
+</section>
+
+<!-- MAIN -->
+<section id="main">
+<div class="card">
+
+<div class="top">
+  <h1 class="names">RAMEESHA</h1>
+  <div class="and">and</div>
+  <h1 class="names">APEKSHA</h1>
+</div>
+
+<div class="middle">
+
+<p class="text">Son of Mr. Priyantha Jayawardhana & Mrs. Thushari Gunasekara</p>
+
+<p class="together">— Together with —</p>
+
+<p class="text">Daughter of Mr. Sunil Wijebandara & Mrs. Chandrakanthi Wijebandara</p>
+
+<p class="request">To celebrate their wedding</p>
+
+<div class="date-block">
+  <div class="line"></div>
+  <p class="date">THURSDAY | 17TH SEPTEMBER 2026</p>
+  <div class="line"></div>
+</div>
+
+<div id="countdown"></div>
+
+<div class="location">
+  <p>Poruwa Ceremony at 8.00 A.M</p>
+  <p>Upcountry Restaurant</p>
+</div>
+
+<div class="location">
+  <p>Wedding Function at 10.00 A.M</p>
+  <p>Avanee Hotel</p>
+</div>
+
+</div>
+
+<div class="bottom">
+  <button class="btn" onclick="openPoruwa()">View Poruwa Location</button>
+  <button class="btn" onclick="openWedding()">View Wedding Location</button>
+</div>
+
+</div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
