@@ -40,7 +40,7 @@ function toggleMusic(){
 
 // MAP LINKS
 function openPoruwa(){
-  window.open("https://maps.app.goo.gl/fx43S51jtNBVq9h79");
+  window.open("https://maps.app.goo.gl/i8gsBkWRazfut9QK6?g_st=iw");
 }
 
 function openWedding(){
